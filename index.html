@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Trevor Shane's Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="Favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav>
+      <button id="theme-toggle" type="button" aria-label="Switch theme">
+        ☀️
+      </button>
+      <div class="nav-links">
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#experiences">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contacts">Find Me</a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="about-me">
+        <img src="Me.png" alt="My photo" />
+        <div class="about-text">
+          <h2 id="about">Trevor Shane</h2>
+          <p><span>Sigma School | Selangor, Malaysia</span></p>
+          <p>
+            Transitioning from food and beverage industry into the digital
+            world, I’m starting my journey in web development with HTML, CSS,
+            and JavaScript, learning one step at a time and having fun creating
+            webpages along the way. My goal is to become a full-stack developer.
+          </p>
+
+          <section id="interests">
+            <blockquote>
+              <p id="my-interest">See more</p>
+              <button id="new-activity" type="button">↺ My Activities</button>
+            </blockquote>
+          </section>
+        </div>
+      </div>
+
+      <div class="my-skills">
+        <h2 id="skills">💻 Technical Skills</h2>
+        <div class="skill-text">
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>Javascript</p>
+        </div>
+
+        <div class="my-goals">
+          <button id="goals" type="button" aria-expanded="false">
+            ➤ My Goals
+          </button>
+          <!-- aria-expanded tells screen readers whether the list is open.-->
+          <ul id="goals-list" hidden>
+            <li>
+              Build more fun and interactive websites that are user-friendly.
+            </li>
+            <li>Improve my frontend and backend developing skills.</li>
+            <li>Able to develop website more efficiently.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="my-experience">
+        <h2 id="experiences">💼 Work Experience</h2>
+
+        <div class="experience">
+          <details name="experience">
+            <!-- Use the name attribute on <details> elements. Details that share the same name form an exclusive group, so opening one automatically closes the others.-->
+            <summary>
+              <hgroup>
+                <h3>Area Sales Executive</h3>
+                <p>
+                  <span>FFM Marketing Sdn Bhd</span>
+                  <span class="years">June 2024 - December 2025</span>
+                </p>
+              </hgroup>
+            </summary>
+            <ul>
+              <li>
+                Manage bakery ingredients stores, HORECA and key account
+                portfolios.
+              </li>
+              <li>
+                Achieved and targeted an average monthly sales of RM250k in
+                newly acquired customers and existing customers.
+              </li>
+              <li>
+                Expand product SKUs within existing customers. Forecast monthly
+                sales and inventory requirements.
+              </li>
+              <li>Execute promotional campaigns for bakery ingredient</li>
+            </ul>
+          </details>
+        </div>
+
+        <div class="experience">
+          <details name="experience">
+            <summary>
+              <hgroup>
+                <h3>Senior Sales Executive</h3>
+                <p>
+                  <span>Sri Manisan Sdn Bhd</span>
+                  <span class="years">January 2023 - May 2024</span>
+                </p>
+              </hgroup>
+            </summary>
+            <ul>
+              <li>
+                Manage artisan bakeries, production and manufacturing, and
+                HORECA portfolios.
+              </li>
+              <li>
+                Achieved and targeted an average monthly sales of RM100k in
+                newly acquired and existing customers.
+              </li>
+              <li>
+                Assist customers with technical support on existing and new
+                SKUs.
+              </li>
+              <li>
+                Conduct market analysis and provide feedback on customer needs
+                and market trends.
+              </li>
+              <li>Track and analyze sales data to measure performance</li>
+              <li>
+                Coordinate with product and operations teams to ensure smooth
+                service delivery.
+              </li>
+            </ul>
+          </details>
+        </div>
+      </div>
+
+      <div class="my-projects">
+        <h2 id="projects">📚 Projects</h2>
+
+        <div class="project-list">
+          <div class="project project-peakfit">
+            <img src="Peakfit.jpg" alt="Project-1" />
+
+            <div class="project-text">
+              <p>
+                My first project from SigmaSchool, using HTML, CSS and
+                Javascript to build a simple gym webpage. Also my first projects
+                shipped to GitHub.
+              </p>
+              <a
+                href="https://github.com/ShaneTrevorShan/Peakfit"
+                class="link-button"
+                >+ Check it out +</a
+              >
+            </div>
+          </div>
+
+          <div class="project project-menu">
+            <img src="FOOD MENU 1.webp" alt="Project-2" />
+
+            <div class="project-text">
+              <p>Food menu project on the side to improve my skills.</p>
+              <a
+                href="https://stackblitz.com/edit/stackblitz-starters-aa2nc4i8"
+                class="link-button"
+                >+ Check it out +</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="my-contacts">
+      <h2 id="contacts">Click Here For More Info:</h2>
+      <a href="https://www.linkedin.com/in/trevor-shan-7547a0231"
+        ><img src="linkedin.png" alt="LinkedIn"
+      /></a>
+      <a href="https://github.com/ShaneTrevorShan"
+        ><img src="github.png" alt="GitHub"
+      /></a>
+      <a href="shane.trevor.shan@gmail.com"
+        ><img src="gmail.png" alt="Gmail"
+      /></a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
